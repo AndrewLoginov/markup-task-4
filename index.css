@@ -1,0 +1,145 @@
+/*Основной контейнер*/
+
+.block
+{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    float: left;
+    background-color: floralwhite;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.block2
+{
+    overflow: hidden;
+}
+
+.block:hover
+{
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+}
+
+img
+{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+img:hover
+{
+    transform: scale(1.2);
+}
+
+h1,
+p
+{
+    margin: 5px;
+    padding: 0;
+}
+
+h1
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a
+{
+    text-decoration: none;
+    transition: 1s linear;
+    color: black;
+    display: inline-block;
+}
+
+a:hover
+{
+    color: crimson;
+}
+
+.text_cat
+{
+    display: none;
+}
+
+.view_cat:hover
+{
+    color: crimson;
+}
+
+/* переключатель */
+
+input
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide input */
+    z-index: 1; /* top of the menu */
+}
+
+.div1
+{
+    width: 50px;
+    display: inline-block;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #7f8fa6;
+    border-radius: 4px;
+    -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+.span1
+{
+    transform-origin: top left;
+}
+
+.span3
+{
+    transform-origin: bottom right;
+}
+
+input:checked ~ .span1
+{
+    background-color: #0c2461;
+    transform: rotate(90deg);
+
+}
+
+input:checked ~ .span2
+{
+    background-color: #0c2461;
+    transform: rotate(450deg) translate(4px, 11px);
+
+}
+
+input:checked ~ .span3
+{
+    background-color: #0c2461;
+    transform: rotate(90deg) translate(7px, 22px);
+    opacity: 1;
+
+}
+
+.input2:checked ~ .block
+{
+    display: block;
+    float: none;
+    margin: 30px auto;
+    width: 500px;
+    height: auto;
+}
+
+.input2:checked ~ .block .text_cat
+{
+    display: block;
+
+}
