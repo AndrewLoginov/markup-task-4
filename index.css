@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /*Основной контейнер*/
 
 .block
@@ -9,6 +11,7 @@
     background-color: floralwhite;
     margin: 10px;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .block2
@@ -39,13 +42,20 @@ p
 {
     margin: 5px;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1
 {
+    width: 300px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+span
+{
+    font-weight: bold;
 }
 
 a
@@ -64,6 +74,9 @@ a:hover
 .text_cat
 {
     display: none;
+    border-top: 2px solid black;
+    text-align: justify;
+    word-break: break-all;
 }
 
 .view_cat:hover
@@ -142,4 +155,11 @@ input:checked ~ .span3
 {
     display: block;
 
+}
+
+.input2:checked ~ .block h1
+{
+    white-space: normal;
+    overflow: hidden;
+    width: auto;
 }
