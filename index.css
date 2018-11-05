@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
 /*Основной контейнер*/
 
@@ -8,22 +8,22 @@
     height: 400px;
     display: inline-block;
     float: left;
-    background-color: floralwhite;
     margin: 10px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 3px;
 }
 
 .block2
 {
     overflow: hidden;
+    height: 200px;
 }
 
 .block:hover
 {
-    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
-    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
-    box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(0,0,0,.75);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,.75);
 }
 
 img
@@ -42,7 +42,12 @@ p
 {
     margin: 5px;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p
+{
+    color: #8a8f99;
 }
 
 h1
@@ -74,14 +79,11 @@ a:hover
 .text_cat
 {
     display: none;
-    border-top: 2px solid black;
+    border-left: 8px solid red;
     text-align: justify;
-    word-break: break-all;
-}
-
-.view_cat:hover
-{
-    color: crimson;
+    word-break: break-word;
+    padding-left: 5px;
+    margin-left: 5px;
 }
 
 /* переключатель */
@@ -162,4 +164,9 @@ input:checked ~ .span3
     white-space: normal;
     overflow: hidden;
     width: auto;
+}
+
+.input2:checked ~ .block .block2
+{
+    height: 300px;
 }
