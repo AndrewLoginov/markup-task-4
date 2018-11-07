@@ -98,7 +98,7 @@ input
     z-index: 1; /* top of the menu */
 }
 
-.div1
+.line
 {
     width: 50px;
     display: inline-block;
@@ -112,31 +112,31 @@ input
     transition: all .5s cubic-bezier(.08,.81,.87,.71);
 }
 
-.span1
+.part1
 {
     transform-origin: top left;
 }
 
-.span3
+.part3
 {
     transform-origin: bottom right;
 }
 
-input:checked ~ .span1
+input:checked ~ .part1
 {
     background-color: #0c2461;
     transform: rotate(90deg);
 
 }
 
-input:checked ~ .span2
+input:checked ~ .part2
 {
     background-color: #0c2461;
     transform: rotate(450deg) translate(4px, 11px);
 
 }
 
-input:checked ~ .span3
+input:checked ~ .part3
 {
     background-color: #0c2461;
     transform: rotate(90deg) translate(7px, 22px);
